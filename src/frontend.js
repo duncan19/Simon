@@ -9,7 +9,15 @@ $(document).ready(function(){
     userJournal.splitWords();
     userJournal.numberOfWords();
     userJournal.numberOfVowels();
-    console.log(userJournal);
+    userJournal.numberOfConsonants();
+    userJournal.teaser8();
+    $("#teaser").text(userJournal.teaser);
+    $("#entry").text(userJournal.body);
+    $("#words").text(userJournal.wordsNumber);
+    $("#vowels").text(userJournal.vowelsNumber);
+    $("#consonants").text(userJournal.consonantsNumber);
+    $(".results").show();
+
   })
 
 
