@@ -6,6 +6,9 @@ $(document).ready(function(){
     e.preventDefault();
     var userEntry = $("#userEntry").val();
     var userJournal = new Entry(userEntry)
+    userJournal.splitWords();
+    userJournal.numberOfWords();
+    userJournal.numberOfVowels();
     console.log(userJournal);
   })
 
